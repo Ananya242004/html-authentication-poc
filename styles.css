@@ -1,13 +1,23 @@
 body{
 background: linear-gradient(to right,#4facfe,#00f2fe);
 }
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #6c757d;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
 
 .card{
 border-radius:15px;
 }
 .card:hover{
 transform: translateY(-5px);
-transition: 0.3s;
+transition: all 0.3s ease;
 }
 .navbar{
 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -17,7 +27,7 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 border-radius: 12px;
 }
 .dashboard-card {
-    transition: 0.3s;
+   transition: all 0.3s ease;
     border-radius: 12px;
 }
 
