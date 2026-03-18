@@ -12,7 +12,16 @@ body {
     padding: 0;
 }
 body {
-    background: red !important;
+    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* 📦 Card Styling */
