@@ -1,36 +1,62 @@
-body{
-background: linear-gradient(to right,#4facfe,#00f2fe);
-}
+/* 🌈 Global Styles */
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #6c757d;
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
 }
+
+/* 🌈 Background + Font */
 body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
     font-family: 'Poppins', sans-serif;
-}
-body {
-    background: linear-gradient(to right, #e3f2fd, #ffffff);
-}
-
-.card{
-border-radius:15px;
-}
-.card:hover{
-transform: translateY(-5px);
-transition: all 0.3s ease;
-}
-.navbar{
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 0;
 }
 
-.card{
-border-radius: 12px;
+/* 📦 Card Styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
+
+/* ✨ Card Hover */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🧩 Dashboard Cards */
 .dashboard-card {
-   transition: all 0.3s ease;
-    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
 .dashboard-card:hover {
     transform: scale(1.05);
+}
+
+/* 🔘 Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* 🔗 Links */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* 📌 Navbar */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
