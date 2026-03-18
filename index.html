@@ -75,10 +75,13 @@ alert("Please fill all fields");
 return;
 }
 
+// ✅ ADD THIS LINE
+localStorage.setItem("user", email);
+
 alert("Login Successful");
 
 // optional redirect
-// window.location.href = "dashboard.html";
+window.location.href = "dashboard.html";
 }
 
 </script>
