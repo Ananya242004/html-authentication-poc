@@ -14,10 +14,9 @@ html, body {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: var(--text-color);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* ===== Card Styling ===== */
@@ -92,6 +91,9 @@ input:focus {
 /* ===== Spacing Utility ===== */
 .container, .card {
     padding: 20px;
+}
+.container {
+    background: transparent !important;
 }
 
 /* ===== Smooth Transition for All Elements ===== */
