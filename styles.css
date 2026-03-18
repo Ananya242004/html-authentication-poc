@@ -1,43 +1,40 @@
-/* 🌈 Global Styles */
+/* ===== Root Colors ===== */
 :root {
-    --primary-color: #6a11cb;
-    --secondary-color: #2575fc;
+    --primary-color: #4facfe;
+    --secondary-color: #00f2fe;
+    --text-color: #333;
 }
 
-/* 🌈 Background + Font */
-body {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
-}
+/* ===== Body Styling ===== */
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
 }
 
-/* 📦 Card Styling */
+/* ===== Card Styling ===== */
 .card {
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
 }
 
-/* ✨ Card Hover */
+/* Hover Effect for Cards */
 .card:hover {
     transform: translateY(-5px);
 }
 
-/* 🧩 Dashboard Cards */
+/* ===== Dashboard Card ===== */
 .dashboard-card {
+    border-radius: 12px;
     transition: all 0.3s ease;
 }
 
@@ -45,30 +42,59 @@ body {
     transform: scale(1.05);
 }
 
-/* 🔘 Buttons */
-.btn-primary {
-    background-color: var(--primary-color);
+/* ===== Navbar ===== */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     border: none;
+    color: white;
     transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: var(--secondary-color);
+/* Button Hover */
+button:hover, .btn:hover {
     transform: scale(1.05);
+    opacity: 0.9;
 }
 
-/* 🔗 Links */
+/* ===== Links ===== */
 a {
+    color: var(--primary-color);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
+/* Link Hover */
 a:hover {
-    color: var(--primary-color);
+    color: #0056b3;
     text-decoration: underline;
 }
 
-/* 📌 Navbar */
-.navbar {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* ===== Input Fields ===== */
+input {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* ===== Spacing Utility ===== */
+.container, .card {
+    padding: 20px;
+}
+
+/* ===== Smooth Transition for All Elements ===== */
+* {
+    transition: all 0.2s ease-in-out;
 }
